@@ -1,5 +1,4 @@
 <template>
-  
   <NavBar :logo="logo_src" :alt="app_name" />
   <router-view/>
   <Footer />
@@ -33,7 +32,6 @@ export default {
   .main-container{
     margin: 50px;
     min-height: 250px;
-    background-color: aqua;
   }
   h1 {
     text-align: center;
