@@ -3,7 +3,7 @@
 set -e
 
 npm run build
-
+npm run backend
 cd dist
 
 git init
