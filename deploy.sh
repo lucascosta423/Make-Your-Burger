@@ -9,6 +9,6 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:lukasstranges/Make-Your-Burger.git main:gh-pages
+git push -f git@github.com:LukasStranges/Make-Your-Burger.git main:gh-pages
 
 cd -
