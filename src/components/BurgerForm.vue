@@ -62,11 +62,11 @@ export default {
     },
     methods: {
         async getIngredientes() {
-            const req = await fetch("http://localhost:3000/ingredientes");
+            const req = await fetch("https://lukasstranges.github.io/db__ingredientes/index.json");
             const data = await req.json();
-            this.paes = data.paes;
-            this.carnes = data.carnes;
-            this.opcionaisdata = data.opcionais;
+            this.paes = data.ingredientes.paes;
+            this.carnes = data.ingredientes.carnes;
+            this.opcionaisdata = data.ingredientes.opcionais;
         },
         async creatBurger(e) {
             e.preventDefault();
@@ -78,9 +78,11 @@ export default {
                 status: "Solicitado",
             };
             const dataJson = JSON.stringify(data);
-            const req = await fetch("http://localhost:3000/burgers", {
+            const req = await fetch("https://lukasstranges.github.io/db__ingredientes/burgers", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: { "Content-Type": "application/json",
+                            'Access-Control-Allow-Origin':'*',
+                            'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS,GET'},
                 body: dataJson
             });
             const res = await req.json();

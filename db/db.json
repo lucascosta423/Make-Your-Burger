@@ -54,11 +54,11 @@
         "tipo": "Tomate"
       },
       {
-        "id": 4,
+        "id": 5,
         "tipo": "Cebola roxa"
       },
       {
-        "id": 4,
+        "id": 6,
         "tipo": "Pepino"
       }
     ]
@@ -83,19 +83,6 @@
     {
       "id": 5,
       "tipo": "Pedido Entregue"
-    }
-  ],
-  "burgers": [
-    {
-      "nome": "Lucas",
-      "pao": "Italiano Branco",
-      "carne": "Maminha",
-      "opcionais": [
-        "Bacon",
-        "Salame"
-      ],
-      "status": "Solicitado",
-      "id": 1
     }
   ]
 }
