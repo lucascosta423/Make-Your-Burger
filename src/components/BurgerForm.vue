@@ -62,7 +62,7 @@ export default {
     },
     methods: {
         async getIngredientes() {
-            const req = await fetch("https://lukasstranges.github.io/db__ingredientes/");
+            const req = await fetch("https://lukasstranges.github.io/db__ingredientes");
             const data = await req.json();
             this.paes = data.ingredientes.paes;
             this.carnes = data.ingredientes.carnes;
